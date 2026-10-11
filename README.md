@@ -1,5 +1,7 @@
 # mcp-manifest-scan
 
+Proves: MCP server security review: static manifest scan with a threat model and planted unsafe manifests. Verify in 60s: `python3 evaluate.py`.
+
 AI agents load MCP servers whose tool manifests can hide shell access, wide filesystem scope, leaked secrets, prompt injection and unpinned packages. This scanner flags those in the manifest, before the client trusts the server.
 
 Python 3 standard library only. No network. No MCP server is started or contacted.
