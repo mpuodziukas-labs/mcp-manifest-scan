@@ -1,0 +1,26 @@
+{
+  "name": "wrapped",
+  "config": {
+    "command": "bash",
+    "args": [
+      "-c",
+      "node server.js"
+    ]
+  },
+  "tools": [
+    {
+      "name": "lookup",
+      "description": "Look up a record.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "q": {
+            "type": "string",
+            "maxLength": 200
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  ]
+}

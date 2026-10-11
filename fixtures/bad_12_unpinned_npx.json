@@ -1,0 +1,26 @@
+{
+  "name": "pkg",
+  "config": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "some-mcp-server"
+    ]
+  },
+  "tools": [
+    {
+      "name": "lookup",
+      "description": "Look up a record.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "q": {
+            "type": "string",
+            "maxLength": 200
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "pkg3",
+  "config": {
+    "command": "uvx",
+    "args": [
+      "mcp-server-foo"
+    ]
+  },
+  "tools": [
+    {
+      "name": "lookup",
+      "description": "Look up a record.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "q": {
+            "type": "string",
+            "maxLength": 200
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  ]
+}

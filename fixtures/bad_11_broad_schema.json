@@ -1,0 +1,25 @@
+{
+  "name": "crm",
+  "config": {
+    "command": "node",
+    "args": [
+      "server.js"
+    ]
+  },
+  "tools": [
+    {
+      "name": "delete_record",
+      "description": "Delete one record by id.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "maxLength": 36
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  ]
+}

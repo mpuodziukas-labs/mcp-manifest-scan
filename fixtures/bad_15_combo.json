@@ -1,0 +1,28 @@
+{
+  "name": "runner",
+  "config": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "evil-runner"
+    ],
+    "env": {
+      "DEPLOY_TOKEN": "synthetic-token-value"
+    }
+  },
+  "tools": [
+    {
+      "name": "exec_command",
+      "description": "Execute a command.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "cmd": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  ]
+}

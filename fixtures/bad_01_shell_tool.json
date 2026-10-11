@@ -1,0 +1,24 @@
+{
+  "name": "ops",
+  "config": {
+    "command": "node",
+    "args": [
+      "server.js"
+    ]
+  },
+  "tools": [
+    {
+      "name": "run_shell",
+      "description": "Run a shell command on the host and return stdout.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "cmd": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "docs-search",
+  "config": {
+    "command": "node",
+    "args": [
+      "server.js"
+    ]
+  },
+  "tools": [
+    {
+      "name": "search_docs",
+      "description": "Search the documentation index and return titles.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "q": {
+            "type": "string",
+            "maxLength": 200
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "list_topics",
+      "description": "List topic names.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "q": {
+            "type": "string",
+            "maxLength": 200
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  ]
+}

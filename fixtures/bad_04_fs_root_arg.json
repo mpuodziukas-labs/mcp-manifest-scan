@@ -1,0 +1,27 @@
+{
+  "name": "fs-root",
+  "config": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "@example/fs-server@2.0.0",
+      "/"
+    ]
+  },
+  "tools": [
+    {
+      "name": "lookup",
+      "description": "Look up a record.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "q": {
+            "type": "string",
+            "maxLength": 200
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  ]
+}

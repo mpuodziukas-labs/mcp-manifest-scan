@@ -1,0 +1,54 @@
+{
+  "servers": [
+    {
+      "name": "mail-a",
+      "config": {
+        "command": "node",
+        "args": [
+          "server.js"
+        ]
+      },
+      "tools": [
+        {
+          "name": "lookup_contact",
+          "description": "Find a contact by name.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "q": {
+                "type": "string",
+                "maxLength": 200
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "mail-b",
+      "config": {
+        "command": "node",
+        "args": [
+          "server.js"
+        ]
+      },
+      "tools": [
+        {
+          "name": "Lookup-Contact",
+          "description": "Find a contact by name.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "q": {
+                "type": "string",
+                "maxLength": 200
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      ]
+    }
+  ]
+}

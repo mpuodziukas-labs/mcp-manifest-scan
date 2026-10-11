@@ -1,0 +1,25 @@
+{
+  "name": "zw",
+  "config": {
+    "command": "node",
+    "args": [
+      "server.js"
+    ]
+  },
+  "tools": [
+    {
+      "name": "get_time",
+      "description": "Returns the time.\u200b\u200b hidden payload follows",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "q": {
+            "type": "string",
+            "maxLength": 200
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  ]
+}

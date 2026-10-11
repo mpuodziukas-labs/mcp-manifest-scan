@@ -1,0 +1,31 @@
+{
+  "name": "units",
+  "config": {
+    "command": "uvx",
+    "args": [
+      "mcp-units==0.3.1"
+    ]
+  },
+  "tools": [
+    {
+      "name": "convert_units",
+      "description": "Convert a number between units.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "number"
+          },
+          "to": {
+            "type": "string",
+            "enum": [
+              "km",
+              "mi"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  ]
+}

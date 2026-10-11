@@ -1,0 +1,27 @@
+{
+  "name": "notes-fs",
+  "config": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "@example/notes-fs@1.4.2",
+      "./notes"
+    ]
+  },
+  "tools": [
+    {
+      "name": "read_note",
+      "description": "Read one note by relative path.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "pattern": "^[a-z0-9_/]+\\.md$"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  ]
+}
